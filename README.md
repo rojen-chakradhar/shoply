@@ -53,3 +53,6 @@ git push origin my-feature
 3. Choose to merge your branch into **`staging`**.
 4. Send message to teammate saying: *"PR is ready for review!"*
 5. Once it's checked, we will merge it!
+
+---
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87d818a6-6dac-4ebc-b4cb-9c98165b1a4f/deploy-status)](https://app.netlify.com/projects/shoplystore/deploys)
