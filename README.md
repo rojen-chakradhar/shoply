@@ -8,7 +8,7 @@ Shoply is a clothing ecommerce site. This is built to learn github collaboration
 #### The Golden Rules
 1. **NEVER** write code directly on `main` or `staging`.
 2. **ALWAYS** make a new branch for every feature you build.
-- new branch's named should be what the work is. example: if building something, branch name should be `build/whats-being-build`, if adding feature to something, branch name should be `feature/whats-the-feature`, if solving a bug, branch name should be `bugfix/whats-the-bug-being-fix`.
+- new branch's named should be what the work is. example: if building something, branch name should be `build/whats-being-build`, if adding feature to something, branch name should be `feature/whats-the-feature`, if solving a bug, branch name should be `bugfix/whats-the-bug-being-fix`, if updating small things like typo error, syntax error, etc, branch name should be `update/whats-being-updated`.
 3. **NEVER** push directly to `staging` without a Pull Request.
 
 ---
@@ -28,6 +28,8 @@ Create a new branch named after the thing you are building or adding feature to 
 git checkout -b build/build-name
 # for feature:
 git checkout -b feature/feature-name
+# for updating small things like typo error, syntax error, etc:
+git checkout -b update/update-name
 # for fixing bug:
 git checkout -b bugfix/bug-name-fix
 ```
