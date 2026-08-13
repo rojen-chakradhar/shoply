@@ -5,39 +5,52 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  /*outline: 1px dotted red;*/
+  /* outline: 1px dotted red; */
   font-family: "Synonym", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @font-face {
   font-family: 'Amulya';
-  src: url('../assets/fonts/Amulya-Variable.eot');
-  src: url('../assets/fonts/Amulya-Variable.ttf') format('ttf'),
-    url('../assets/fonts/Amulya-Variable.woff') format('woff'),
-    url('../assets/fonts/Amulya-Variable.woff2') format('woff2');
-  font-style: italic;
-  font-weight: bold;
+  src: url('../assets/fonts/Amulya-BoldItalic.eot');
+  src: url('../assets/fonts/Amulya-BoldItalic.ttf') format('ttf'),
+    url('../assets/fonts/Amulya-BoldItalic.otf') format('otf'),
+    url('../assets/fonts/Amulya-BoldItalic.woff') format('woff'),
+    url('../assets/fonts/Amulya-BoldItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: bold;
 }
 
 @font-face {
   font-family: "Synonym";
-  src: url("../assets/fonts/Synonym-Variable.eot");
-  src: url('../assets/fonts/Synonym-Variable.ttf') format('ttf'),
-    url('../assets/fonts/Synonym-Variable.woff') format('woff'),
-    url('../assets/fonts/Synonym-Variable.woff2') format('woff2');
+  src: url("../assets/fonts/Synonym-Regular.eot");
+  src: url('../assets/fonts/Synonym-Regular.ttf') format('ttf'),
+    url('../assets/fonts/Synonym-Regular.otf') format('otf'),
+    url('../assets/fonts/Synonym-Regular.woff') format('woff'),
+    url('../assets/fonts/Synonym-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Synonym-Medium";
+  src: url("../assets/fonts/Synonym-Medium.eot");
+  src: url('../assets/fonts/Synonym-Medium.ttf') format('ttf'),
+    url('../assets/fonts/Synonym-Medium.otf') format('otf'),
+    url('../assets/fonts/Synonym-Medium.woff') format('woff'),
+    url('../assets/fonts/Synonym-Medium.woff2') format('woff2');
+    font-style: normal;
 }
 
 :root {
   --white: #fff;
-  --black: #000;
+  --black: #333;
   --outline: #d5d5d5;
+  --accent: olive;
 }
