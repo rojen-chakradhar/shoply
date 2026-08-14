@@ -51,15 +51,30 @@ header {
   background-color: var(--accent);
 }
 
+.search-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #b1b1b1;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
 .search-bar {
-  width: 15vw;
-  padding: 2px 10px;
+  width: clamp(120px, 15vw, 220px);
+  padding: 2px 10px 2px 32px;
   border: 1px solid var(--outline);
   border-radius: 20px;
   color: var(--black);
   background-color: var(--white);
   transition: width 0.3s ease;
   cursor: text;
+  font-size: 1rem;
 }
 
 .search-bar::placeholder {
@@ -68,8 +83,7 @@ header {
 }
 
 .search-bar:focus {
-  width: 25vw;
-  padding-left: 20px;
+  width: clamp(180px, 25vw, 320px);
   outline: none;
   border-color: var(--black);
 }
