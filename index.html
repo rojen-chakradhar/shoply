@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="./styles/cart.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   </head>
   <body>
     <header>
@@ -67,22 +68,57 @@
       </article>
     </aside>
     <main>
-      <div class="hero">
-        <div class="background-images">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
             <div class="explore">
               <p>NEW SEASON</p>
               <h2>The New Essentials</h2>
               <p>Elevated everyday pieces, thoughtfully selected.</p>
-              <button>SHOP COLLECTION</button>
+              <button>shop collection <i class="ri-arrow-right-line"></i></button>
             </div>
-          <img src="/assets/images/slider-image-1.png" alt="hero Image">
-          <img src="/assets/images/slider-image-2.png" alt="hero Image">
-          <img src="/assets/images/slider-image-3.png" alt="hero Image">
-          <img src="/assets/images/slider-image-4.png" alt="hero Image">
+            <img src="/assets/images/slider-image-1.png" alt="hero Image">
+          </div>
+          <div class="swiper-slide">
+            <div class="explore">
+              <p>NEW SEASON</p>
+              <h2>The New Essentials</h2>
+              <p>Elevated everyday pieces, thoughtfully selected.</p>
+              <button>shop collection</button>
+            </div>
+            <img src="/assets/images/slider-image-2.png" alt="hero Image">
+          </div>
+          <div class="swiper-slide">
+            <div class="explore">
+              <p>NEW SEASON</p>
+              <h2>The New Essentials</h2>
+              <p>Elevated everyday pieces, thoughtfully selected.</p>
+              <button>shop collection</button>
+            </div>
+            <img src="/assets/images/slider-image-3.png" alt="hero Image">
+          </div>
+          <div class="swiper-slide">
+            <div class="explore">
+              <p>NEW SEASON</p>
+              <h2>The New Essentials</h2>
+              <p>Elevated everyday pieces, thoughtfully selected.</p>
+              <button>shop collection</button>
+            </div>
+            <img src="/assets/images/slider-image-4.png" alt="hero Image">
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

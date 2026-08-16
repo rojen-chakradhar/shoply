@@ -8,6 +8,7 @@ header {
   padding: 1rem 5rem;
   text-transform: uppercase;
   border-bottom: 1px solid var(--outline);
+  background-color: var(--white);
 }
 
 .logo {
