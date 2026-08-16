@@ -1,25 +1,18 @@
-.hero {
-	margin-top: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+main {
+	margin-top: 2vw;
+	padding: 0 5rem;
 }
 
-.background-images {
-	display: grid;
-	grid-auto-flow: column;
-	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	width: 1325px;
+.swiper {
+	height: 80dvh;
+  width: 100%;
 }
 
-.background-images::-webkit-scrollbar {
-	display: none;
-}
-
-.background-images img {
+.explore img {
+	height: 100%;
+	width: 100%;
 	object-fit: cover;
+	object-position: center;
 	flex-shrink: 0;
 	scroll-snap-align: start;
 	mask-position: bottom;
@@ -27,19 +20,27 @@
 	pointer-events: none;
 }
 
+.swiper-slide {
+	position: relative;
+}
+
 .explore {
 	position: absolute;
-	color: white;
-	height: 100%;
+	left: 3rem;
+	bottom: 5rem;
 	display: flex;
-	justify-content: center;
-	align-items: start;
 	flex-direction: column;
-	margin: 80px 50px;
+	align-items: start;
+	justify-content: center;
+	color: var(--white);
 }
 .explore p {
 	font-size: 16px;
 	font-family: "Synonym-Medium", sans-serif;
+}
+
+.explore p:last-child {
+	font-size: 14px;
 }
 
 .explore h2 {
@@ -50,15 +51,19 @@
 }
 
 .explore button {
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 29px;
 	font-family: "Synonym-Medium", sans-serif;
+	text-transform: uppercase;
 	width: 212px;
 	height: 48px;
 	outline: none;
 	border: 0;
-	color: #333333;
-	font-weight: 100;
+	color: var(--black);
 	cursor: pointer;
-	background-color: #ffffff;
+	background-color: var(--white);
+}
+
+.explore button i {
+	font-size: 16px;
 }
