@@ -5,7 +5,7 @@ main {
 
 .swiper {
 	height: 80dvh;
-  width: 100%;
+  	width: 100%;
 }
 
 .explore img {
@@ -34,6 +34,7 @@ main {
 	justify-content: center;
 	color: var(--white);
 }
+
 .explore p {
 	font-size: 16px;
 	font-family: "Synonym-Medium", sans-serif;
@@ -66,4 +67,94 @@ main {
 
 .explore button i {
 	font-size: 16px;
+}
+
+.collection-store-category{
+	margin-top: 30px;
+ 	width: 100%;
+  	max-width: 1400px;
+  	box-sizing: border-box;
+
+	p{
+		font-family: "Synonym";
+		color: var(--accent);
+		font-size: 18px;
+		font-size: clamp(12px, 3vw, 18px);
+		margin: 0;
+	}
+
+	h2{
+		font-family: 'Amulya';
+		color: var(--black);
+		font-size: clamp(20px, 7vw, 49px);
+		margin: 0;
+	}
+}
+
+.collection{
+	display: flex;
+	gap: 20px;
+	width: 100%;
+}
+
+.collection-card{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.collection-card img{
+	width: 100%;
+	height: auto;
+	display: block;
+	object-position: center;
+	object-fit: cover;
+}
+
+.collection-link{
+	position: absolute;
+    top: 0;
+    left: clamp(15px, 3vw, 30px);
+    bottom: clamp(15px, 3vw, 30px);
+	right: 0;
+	text-align: left;
+}
+
+.collection-link h2{
+	margin: 0;
+  	font-size: clamp(22px, 3vw, 48px);
+	color: white;
+	font-family: "Synonym";
+	font-weight: bolder;
+}
+
+.collection-link p{
+	font-family: "Synonym-Medium";
+	color: white;
+	margin: 0;
+  	font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+
+
+@media (max-width: 800px) {
+	.collection{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.collection-link h2{
+		margin: 0;
+		font-size: clamp(2px, 7vw, 4rem);
+		color: white;
+		font-family: "Synonym";
+	}
+
+	.collection-link p{
+		font-family: "Synonym-Medium";
+		color: white;
+		margin: 0;
+		font-size: clamp(1rem, 3vw, 3rem);
+	}
 }
